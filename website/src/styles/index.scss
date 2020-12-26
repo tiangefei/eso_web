@@ -1,0 +1,93 @@
+// Required Boostrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Override Bootstrap Variables
+$grid-columns: 12;
+$grid-gutter-width: 48px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 1024px,
+  lg: 1440px,
+);
+
+$white: #fff;
+$black: #000;
+$transparent: transparent;
+$yellow: #fdfc71;
+$purple: #b620e0;
+$green: #3fff18;
+$blue: #2c12ff;
+$grey: #d8d8d8;
+
+$theme-colors: (
+  "white": $white,
+  "black": $black,
+  "transparent": $transparent,
+  "yellow": $yellow,
+  "purple": $purple,
+  "green": $green,
+  "blue": $blue,
+  "grey": $grey,
+);
+
+// Optional Bootstrap
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/transitions";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/buttons";
+// @import "../../node_modules/bootstrap/scss/dropdown";
+// @import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/type";
+// @import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/navbar";
+
+// Additional Scripts
+
+// global styles
+@import "./global.scss";
+@import "./layout.scss";
+@import "./typography.scss";
+@import "./pages.scss";
+
+// global components
+@import "./header.scss";
+@import "./headerMobile.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+@import "./emailCapture.scss";
+@import "./softFooterCta.scss";
+@import "./resourcesMarquee.scss";
+@import "./researchTeam.scss";
+@import "./dropdown.scss";
+
+// homepage modules
+@import "./homeHero.scss";
+@import "./homeOurPhilosophy.scss";
+@import "./homeOurFunds.scss";
+@import "./homePress.scss";
+@import "./homeFeaturedBlog.scss";
+
+// resources modules
+@import "./resources.scss";
+@import "./article.scss";
+@import "./library.scss";
+@import "./glossary.scss";
+
+// advisory solution
+@import "./investorSolutions.scss";
+@import "./productPage.scss";
+
+// about
+@import "./about.scss";
+@import "./aboutOurValues.scss";
+@import "./aboutCarousel.scss";
+@import "./corporatePartners.scss";
+@import "./aboutInvestorSolutions.scss";

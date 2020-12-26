@@ -1,0 +1,115 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+a:hover {
+  // cursor: url("../images/cursors/pointer.png"), auto !important;
+}
+
+.button {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.full-width {
+    width: 100%;
+  }
+  &.primary {
+    width: 292px;
+    height: 80px;
+    background-color: $black;
+    color: $white;
+    opacity: 1;
+    transition: opacity 500ms Cubic-bezier(0.33, 1, 0.33, 1);
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 500ms Cubic-bezier(0.33, 1, 0.33, 1);
+    }
+  }
+  &.secondary {
+    background-color: $transparent;
+    border: 1px solid $black;
+    padding: 30px 80px 24px;
+    transition: all 500ms Cubic-bezier(0.33, 1, 0.33, 1);
+    span {
+      margin: 0;
+    }
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+      transition: all 500ms Cubic-bezier(0.33, 1, 0.33, 1);
+    }
+  }
+  @media (max-width: map-get($grid-breakpoints,md)) {
+    &.secondary {
+      width: 100%;
+      display: flex;
+      padding: 30px 0px 24px;
+      justify-content: center;
+    }
+  }
+}
+
+#cookies {
+  position: fixed;
+  z-index: 999999;
+  bottom: 48px;
+  width: calc(100% - 96px);
+  left: 48px;
+  height: 50px;
+  border: 1px solid $black;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 48px;
+  h3 {
+    padding-top: 5px;
+  }
+  .cookie-button {
+    cursor: pointer;
+    width: 20%;
+    background-color: $black;
+    color: $white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .eyebrow {
+      padding-top: 3px;
+    }
+  }
+  @media (max-width: map-get($grid-breakpoints,md)) {
+    height: 130px;
+    width: calc(100% - 32px);
+    left: 16px;
+    padding-left: 16px;
+    .cookie-button {
+      margin-left: 16px;
+      width: 100%;
+      padding: 5px;
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.header-gap {
+  padding-top: 150px;
+}
+
+.spx {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.my-75 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}

@@ -1,0 +1,450 @@
+#investorSolutions {
+  overflow-x: hidden;
+  .hero {
+    position: relative;
+    color: $white;
+    ::selection {
+      color: $transparent;
+      text-shadow: 0px 0px 7px $white;
+    }
+    .overlay {
+      position: absolute;
+      z-index: 15;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+    .hero-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .hero-title {
+      z-index: 20;
+      position: absolute;
+      padding: 150px 46px 0px;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        width: 75%;
+      }
+      .arrow {
+        margin-left: 45px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    @media (max-width: map-get($grid-breakpoints,md)) {
+      .hero-img {
+        height: 440px;
+      }
+      .hero-title {
+        z-index: 20;
+        position: absolute;
+        padding: 125px 16px 0px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 36px;
+          line-height: 38px;
+          width: 100%;
+        }
+        .arrow {
+          width: 32px;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  .header-row {
+    margin-top: 50px;
+    p,
+    h3 {
+      margin-bottom: 30px;
+      padding: 0px 10px;
+    }
+  }
+}
+
+#exchangeTradeFunds {
+  margin-top: 100px;
+  .header-row {
+    h1 {
+      margin-bottom: 50px;
+    }
+    p,
+    h3 {
+      margin-bottom: 30px;
+      padding: 0px 10px;
+    }
+  }
+}
+
+#ourNewestFund {
+  h2 {
+    padding: 56px 0px;
+  }
+  .pillars-row {
+    padding: 0px 20px;
+    margin-bottom: 48px;
+    .pillar {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      .number-col {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        img {
+          // margin-top: 24px;
+        }
+      }
+      .info-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4 {
+          font-family: "times now extralight";
+          font-weight: 400;
+          font-size: 32px;
+        }
+        .info-body {
+          padding: 24px 0px;
+        }
+        a {
+          font-weight: 700;
+          font-family: "univers light";
+          background-color: $transparent;
+          transition: background-color 150ms linear;
+          img {
+            width: 16px;
+            margin-left: 8px;
+          }
+          &:hover {
+            background-color: $yellow;
+            transition: background-color 150ms linear;
+            font-size: inherit;
+            font-family: inherit;
+          }
+        }
+      }
+      .image-col {
+        display: flex;
+        justify-content: center;
+        img {
+          min-width: 225px;
+          width: 60%;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  @media (max-width: map-get($grid-breakpoints,md)) {
+    h2 {
+      padding: 40px 0px;
+    }
+    .pillars-row {
+      padding: 0px 20px;
+      margin-bottom: 48px;
+      .pillar {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 88px;
+        .number-col {
+          display: flex;
+          justify-content: center;
+        }
+        .info-col {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          h4 {
+            font-family: "times now extralight";
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+          }
+          .info-body {
+            padding: 24px 0px;
+          }
+          a {
+            font-weight: 700;
+            font-family: "univers light";
+            img {
+              width: 16px;
+              margin-left: 8px;
+            }
+            &:hover {
+              font-size: inherit;
+              font-family: inherit;
+            }
+          }
+        }
+        .image-col {
+          text-align: center;
+          margin-bottom: 24px;
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#individualInvestors,
+#institutionalInvestors,
+#advisorServices,
+#ourNewestFund,
+#assetAllocation {
+  @media (max-width: map-get($grid-breakpoints,md)) {
+    .container-fluid {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+  }
+  ::selection {
+    color: $transparent;
+    text-shadow: 0px 0px 7px $black;
+  }
+  .hero {
+    ::selection {
+      color: $transparent;
+      text-shadow: 0px 0px 7px $white;
+    }
+    position: relative;
+    .hero-img {
+      position: absolute;
+    }
+    .title {
+      position: absolute;
+      bottom: 46px;
+      left: 46px;
+      color: $white;
+    }
+    @media (max-width: map-get($grid-breakpoints,md)) {
+      .hero-img {
+        height: 300px;
+      }
+      .title {
+        bottom: 16px;
+        left: 16px;
+      }
+    }
+  }
+  .header-row {
+    @media (max-width: map-get($grid-breakpoints,md)) {
+      .container-fluid {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      .col {
+        padding: 0;
+        p {
+          padding: 0;
+        }
+      }
+    }
+    margin: 50px 0px 20px;
+    h1 {
+      margin-bottom: 50px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    p,
+    li,
+    h3 {
+      margin-bottom: 30px;
+      padding: 0px 10px;
+    }
+    a {
+      background-color: $transparent;
+      color: $black;
+      transition: all 250ms Cubic-bezier(0.33, 1, 0.33, 1);
+      &:hover {
+        background-color: $yellow;
+        color: $black;
+        transition: all 250ms Cubic-bezier(0.33, 1, 0.33, 1);
+      }
+    }
+  }
+  .contact-row {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    .call-cta,
+    .mail-cta {
+      .icon-white {
+        display: none;
+      }
+      .icon-black {
+        display: block;
+      }
+      &:hover {
+        .icon-white {
+          display: block;
+        }
+        .icon-black {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: map-get($grid-breakpoints,md)) {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .call-cta {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+#previewPill {
+  height: 410px;
+  ::selection {
+    color: $transparent;
+    text-shadow: 0px 0px 7px $black;
+  }
+  #pill {
+    h2 {
+      letter-spacing: -3px;
+    }
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 40px 64px;
+    .text-container {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .tag-container {
+        display: flex;
+        margin-bottom: 15px;
+        .tag {
+          border: 1px solid $black;
+          margin: 0px 10px 0px 0px;
+          padding: 3px 10px;
+          font-size: 12px;
+          border-radius: 50px;
+          text-align: center;
+        }
+      }
+      .button.secondary {
+        margin-top: auto;
+        padding: 16px 30px 12px;
+      }
+    }
+    .img-container {
+      height: 100%;
+      width: 50%;
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  @media (max-width: map-get($grid-breakpoints,md)) {
+    height: auto;
+    margin-bottom: 0px;
+    #pill {
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 15px;
+      .text-container {
+        width: 100%;
+        padding: 16px;
+        img {
+          align-self: center;
+
+          margin-bottom: 15px;
+        }
+      }
+      .img-container {
+      }
+    }
+  }
+}
+#emailPill {
+  height: 410px;
+  margin-bottom: 30px;
+  #pill {
+    border-radius: 4px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    .email-container {
+      background-color: $white;
+      color: $black;
+      border-bottom: 1px solid $black;
+      ::selection {
+        color: $transparent;
+        text-shadow: 0px 0px 7px $white;
+      }
+      h3 {
+        margin-bottom: 50px;
+      }
+      .email-signup-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .email-header {
+          margin-bottom: 10px;
+        }
+        .email-form {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          form {
+            border-radius: 0;
+            width: 100%;
+            input {
+              background-color: $white;
+              color: $black;
+              border: none;
+              border-bottom: 1px solid $black;
+              &.email-input {
+                padding-bottom: 5px;
+                width: 85%;
+              }
+              &.submit-button {
+                padding-bottom: 5px;
+                width: 15%;
+                color: $black;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
