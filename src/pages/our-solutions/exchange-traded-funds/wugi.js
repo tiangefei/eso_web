@@ -70,11 +70,11 @@ const WUGI = ({ mobile }) => {
     }
 
     let bbh_record_date = moment()
-      .subtract(temp_days_back, "days")
+      .subtract(bbh_days_back, "days")
       .format("DD-MMM-YY")
 
     let display_date = moment()
-      .subtract(temp_days_back, "days")
+      .subtract(bbh_days_back, "days")
       .format("MMMM DD, YYYY")
     setDate(display_date)
 
@@ -92,7 +92,7 @@ const WUGI = ({ mobile }) => {
     }
 
     let etfg_record_date = moment()
-      .subtract(temp_days_back, "days")
+      .subtract(etfg_days_back, "days")
       .format("DD-MMM-YY")
 
     //// Get Date format for Downloads File
@@ -107,7 +107,7 @@ const WUGI = ({ mobile }) => {
     }
 
     let downloads_record_date = moment()
-      .subtract(temp_days_back, "days")
+      .subtract(downloads_days_back, "days")
       .format("MMDDYYYY")
 
     _getDailyPositions(bbh_record_date)

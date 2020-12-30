@@ -143,7 +143,7 @@ function getNavDetatil(nav_detail) {
     const pic_detail = <Col className="col-format"><img src={ etf_icon }/></Col>;
     const fund_detail = nav_detail.map((i, ind) => {
       let sub_item = i.sub_funds;
-      return (<DropDown key={ind} funds={sub_item} title={i.title} icon={i.has_pic}></DropDown>);
+      return (<DropDown key={ind} funds={sub_item} title={i.title} to={i.link} icon={i.has_pic}></DropDown>);
     })
     
     return (

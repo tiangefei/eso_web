@@ -84,7 +84,7 @@ class HomePress extends Component {
       if (i.video) {
         return (
           <div className="video">
-            <iframe width="900" height="500" src={i.link}></iframe>          
+            <iframe width="896" height="504" src={i.link}></iframe>          
           </div>
         )
       }
